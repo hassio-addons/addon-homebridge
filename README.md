@@ -1,10 +1,9 @@
-# Hass.io Add-on: Homebridge
+# Community Hass.io Add-on: Homebridge
 
 ![Project Stage][project-stage-shield]
 ![Maintenance][maintenance-shield]
 ![Awesome][awesome-shield]
 [![License][license-shield]](LICENSE.md)
-
 
 This add-on provides the installation, configuration, and integration for
 [Homebridge][homebridge].
@@ -50,7 +49,8 @@ you can say:
 The installation of this add-on is pretty straight forward and not different in
 comparison to installing any other Hass.io add-on.
 
-1. [Add our Hass.io add-ons repository][repository] to your Hass.io instance
+1. [Add our Hass.io add-ons repository][repository] to your Hass.io instance.  
+**NOTE**: Do not add this repository, but use: `https://github.com/hassio-addons/repository`.
 2. Install the "Homebridge" add-on
 3. Start the "Homebridge" add-on
 4. Check the logs of the "Homebridge" add-on to see if everything went well and
@@ -63,7 +63,7 @@ Please read the rest of this document further instructions.
 
 On the first run, this add-on will create the necessary configuration files
 for you. Stored in `/config/homebridge/`. You can modify the configuration
-to your own liking. For documentation on configuring Homebridge, please refer
+to your liking. For documentation on configuring Homebridge, please refer
 to the [Homebridge GitHub][homebridge] repository. For documentation on
 configuring the Home Assistant for Homebridge plugin, please refer to the
 [Home Assistant for Homebridge GitHub][homebridge-homeassistant] repository.
@@ -86,7 +86,7 @@ When set to `true` the addon will output more information in the logs of the
 add-on. The add-on will also start all the services in debug mode, which causes
 more output in the log files.
 
-This might be useful when you're dealing with an unknown issue. It is
+This might be useful when you are dealing with an unknown issue. It is
 recommended leaving to option set to `false`, unless you are troubleshooting.
 
 **Option: `plugins`**
@@ -118,8 +118,8 @@ keyword `homebridge-plugin`][homebridge-plugins].
 ## Adding Homebridge to iOS
 
 Using the Home app (or most other HomeKit apps), you should be able to add the
-single accessory "Home Assistant", assuming that you're still running the
-Homebridge add-on and you're on the same (Wifi) network. Adding this accessory
+single accessory "Home Assistant", assuming that you are still running the
+Homebridge add-on and you are on the same (Wifi) network. Adding this accessory
 will automatically add all accessories and platforms defined in your
 Home Assistant instance.
 
@@ -128,7 +128,6 @@ When you attempt to add the "Home Assistant" accessory, it will ask for a
 the first time. You can find the generated PIN code in the add-on logs and in
 your `/config/homebridge/config.json` file (where you, of course,
 can change it as well).
-
 
 ## Known issues and limitations
 
@@ -145,23 +144,28 @@ is "Speakers".
 * One installation of Homebridge can only expose 100 accessories due to a
 HomeKit limit.
 * Once an accessory has been added to the Home app, changing its name via
-Homebridge won't be automatically reflected in iOS. You must change it via
+Homebridge will not be automatically reflected in iOS. You must change it via
 the Home app as well.
 * IPv6 support has been removed from this addon, because of known issues with
-libraries used by Homebridge. If you rely solely on IPv6 in your network,
-this add-on would not work.
+libraries used by Homebridge. If you rely solely on IPv6 on your network,
+this add-on will not work.
 * If you have set up SSL using a self-signed certificate, you will need to
 set verify_ssl to false in your `/config/homebridge/config.json` file to allow
 bypassing the Node.js certificate checks.
 * Errors on startup. The following errors are experienced when starting
 Homebridge and can be safely ignored.
 ```
-*** WARNING *** The program 'nodejs' uses the Apple Bonjour compatibility layer of Avahi
+*** WARNING *** The program 'nodejs' uses the Apple Bonjour compatibility layer 
+of Avahi
 *** WARNING *** Please fix your application to use the native API of Avahi!
-*** WARNING *** For more information see http://0pointerde/avahi-compat?s=libdns_sd&e=nodejs
-*** WARNING *** The program 'nodejs' called 'DNSServiceRegister()' which is not supported (or only supported partially) in the Apple Bonjour compatibility layer of Avahi
+*** WARNING *** For more information see 
+http://0pointerde/avahi-compat?s=libdns_sd&e=nodejs
+*** WARNING *** The program 'nodejs' called 'DNSServiceRegister()' which is not
+supported (or only supported partially) in the Apple Bonjour compatibility layer
+of Avahi
 *** WARNING *** Please fix your application to use the native API of Avahi!
-*** WARNING *** For more information see http://0pointerde/avahi-compat?s=libdns_sd&e=nodejs&f=DNSServiceRegister
+*** WARNING *** For more information see 
+http://0pointerde/avahi-compat?s=libdns_sd&e=nodejs&f=DNSServiceRegister
 ```
 
 ## FAQ
@@ -172,22 +176,21 @@ Please be sure to set the `host` and `password` parameters in the
 `/config/homebridge/config.json` file.  
 Normally `http://172.17.0.1:8123` should be a sufficient `host` to use when
 running hass.io.  
-If a password protects your Home Assistant instance, you'll also need to
+If a password protects your Home Assistant instance, you will also need to
 set the `password`, which is empty by default.
 
-**My iOS App Can't Find Homebridge/Home Assistant**
+**My iOS App Cannot Find Homebridge/Home Assistant**
 
 Two reasons why Homebridge may not be discoverable:
 
-  1. Homebridge server thinks it's been paired with, but iOS thinks otherwise.
-  Fix: deleted `persist/` directory which is in your `config/homebridge` directory
-  and restart the add-on.
+  1. Homebridge server thinks it has been paired with, but iOS thinks otherwise.
+  Fix: deleted `persist/` directory which is in your `config/homebridge`
+  directory and restart the add-on.
 
   2. iOS device has gotten your Homebridge `username` (looks like a MAC address)
-  "stuck" somehow, where it's in the database but inactive. Fix: change your
+  "stuck" somehow, where it is in the database but inactive. Fix: change your
   `username` in the "bridge" section of `/config/homebridge/config.json` to be
   some new value and restart the add-on.
-
 
 ## Support
 
@@ -198,25 +201,26 @@ to help you out.
 
 ## Credits
 
-A big shout out to the following people, without them this add-on wasn't possible:
-- The team & community of [Home Assistant][home-assistant] for developing such an
-excellent home automation toolkit
+A big shout out to the following people, without them this add-on was not 
+possible:
+- The team & community of [Home Assistant][home-assistant] for developing such 
+an excellent home automation toolkit
 - [Nick Farina][nfarina] for developing [Homebrige][homebridge]
 
 This add-on has been inspired by the following repositories:
 - [docker-homebridge][oznu-docker-homebridge] by [Oznu][oznu]
 - [homebridge-docker][ckuburlis-homebridge-docker]by [ckuburlis]
-- [hassio-addons][olivierguerriat-hassio-addons] by [Olivier Guerriat][olivierguerriat]
+- [hassio-addons][olivierguerriat-hassio-addons] 
+  by [Olivier Guerriat][olivierguerriat]
 
 Thank you all!
-
 
 ## More Hass.io add-ons
 
 Do you like this add-on? Want some more functionality to your Hass.io Home
 Assistant instance?
 
-We've created multiple add-ons for Hass.io. For a full list, check out
+We have created multiple add-ons for Hass.io. For a full list, check out
 our [GitHub Repository][repository].
 
 ## License
@@ -242,8 +246,6 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-
 
 [aarch64-arch-shield]: https://img.shields.io/badge/architecture-aarch64-blue.svg
 [aarch64-dockerhub]: https://hub.docker.com/r/hassioaddons/homebridge-aarch64
@@ -276,7 +278,7 @@ SOFTWARE.
 [i386-microbadger]: https://microbadger.com/images/hassioaddons/homebridge-i386
 [i386-pulls-shield]: https://img.shields.io/docker/pulls/hassioaddons/homebridge-i386.svg
 [i386-version-shield]: https://images.microbadger.com/badges/version/hassioaddons/homebridge-i386.svg
-[issues]: https://github.com/hassio-addons/repository/issues
+[issues]: https://github.com/hassio-addons/addon-homebridge/issues
 [license-shield]: https://img.shields.io/github/license/hassio-addons/repository.svg
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2017.svg
 [nfarina]: https://github.com/nfarina
