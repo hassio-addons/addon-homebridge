@@ -177,7 +177,7 @@ generate_homekit_pin() {
 #   None
 # ------------------------------------------------------------------------------
 apply_hap_nodejs_ipv6_hotfix() {
-  local eventedhttp_file='/usr/local/share/.config/yarn/global/node_modules/hap-nodejs/lib/util/eventedhttp.js'
+  local eventedhttp_file='/usr/lib/node_modules/homebridge/node_modules/hap-nodejs/lib/util/eventedhttp.js'
 
   display_status_message 'Applying HAP NodeJS IPV6 HOTFIX'
   command patch $eventedhttp_file <<PATCH
@@ -237,7 +237,7 @@ install_plugins() {
   do
     display_status_message "Installing Homebridge plugin $plugin"
 
-    command yarn global add "$plugin" || display_error_message \
+    command npm install --unsafe-perm -g "$plugin" || display_error_message \
       "Failed installing Homebridge plugin $plugin" $EX_PLUGIN_FAILED
   done
 }
