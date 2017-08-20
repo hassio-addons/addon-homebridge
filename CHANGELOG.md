@@ -6,11 +6,14 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
+-
+
+## 1.0.2 - 2017-08-20
 ### Changed
 - Updated `homebridge-homeassistant` to version v2.3.0
 - Changed repository file structure
 - Changed / simplyfield buildscripts
-- UPdated the documentation to match recent changes
+- Updated the documentation to match recent changes
 ### Fixes
 - There was an error when installed the plugin [#6](https://github.com/hassio-addons/repository/issues/6)
 
