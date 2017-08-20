@@ -2,7 +2,7 @@
 set -e
 
 SLUG="homebridge"
-BUILD_CONTAINER_NAME="hassioaddons-$SLUG"
+BUILD_CONTAINER_NAME="hassioaddons-$SLUG-$$"
 LOCAL_REPOSITORY="."
 BUILD_DIR="$(pwd)/build"
 DOCKER_PUSH="true"
