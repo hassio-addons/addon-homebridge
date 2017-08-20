@@ -1,15 +1,13 @@
 #!/bin/bash
 set -e
 
-LOCAL_REPOSITORY="."
-BUILD_CONTAINER_NAME="hassioaddons-homebridge"
 SLUG="homebridge"
+BUILD_CONTAINER_NAME="hassioaddons-$SLUG"
+LOCAL_REPOSITORY="."
 BUILD_DIR="$(pwd)/build"
-DOCKER_IMAGE="hassioaddons/homebridge"
 DOCKER_PUSH="true"
 DOCKER_CACHE="true"
 DOCKER_WITH_LATEST="true"
-REPOSITORY=https://github.com/hassio-addons/repository
 
 cleanup() {
     echo "[INFO] Cleanup."
@@ -28,7 +26,7 @@ trap 'cleanup fail' SIGINT SIGTERM
 help () {
     cat << EOF
 Script for hassio addon docker build
-create_hassio_addon [options]
+build [options]
 
 Options:
     -h, --help
@@ -79,14 +77,9 @@ if [ -z "$SLUG" ]; then
     exit 1
 fi
 
-# Get the absolute script location
-pushd "$(dirname "$0")" > /dev/null 2>&1
-SCRIPTPATH=$(pwd)
-popd > /dev/null 2>&1
-
 BASE_IMAGE="homeassistant\/$ARCH-base:latest"
-BUILD_DIR=${BUILD_DIR:=$SCRIPTPATH}
-WORKSPACE=${BUILD_DIR:=$SCRIPTPATH}/hassio-supervisor-$ARCH
+DOCKER_IMAGE="hassioaddons/$SLUG-$ARCH"
+WORKSPACE=$BUILD_DIR/hassio-supervisor-$ARCH
 ADDON_WORKSPACE=$WORKSPACE/$SLUG
 
 # setup docker
