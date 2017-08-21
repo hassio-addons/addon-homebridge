@@ -8,7 +8,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## Unreleased
 -
 
-## 1.0.2 - 2017-08-20
+## [v1.0.3](https://github.com/hassio-addons/addon-homebridge/tree/v1.0.3) (2017-08-21)
+[Full Changelog](https://github.com/hassio-addons/addon-homebridge/compare/v1.0.2...v1.0.3)
+### Fixed
+- Adds 'default_visbility' flag to the default configuration of Homebridge [#2](https://github.com/hassio-addons/addon-homebridge/issues/2)
+
+## [v1.0.2](https://github.com/hassio-addons/addon-homebridge/tree/v1.0.2) (2017-08-20)
+[Full Changelog](https://github.com/hassio-addons/addon-homebridge/compare/v1.0.1...v1.0.2)
 ### Changed
 - Updated `homebridge-homeassistant` to version v2.3.0
 - Changed repository file structure
@@ -17,11 +23,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Fixes
 - There was an error when installed the plugin [#6](https://github.com/hassio-addons/repository/issues/6)
 
-## 1.0.1 - 2017-08-15
+## [v1.0.1](https://github.com/hassio-addons/addon-homebridge/tree/v1.0.1) (2017-08-15)
+[Full Changelog](https://github.com/hassio-addons/addon-homebridge/compare/v1.0.0...v1.0.1)
 ### Fixes
 - Homebridge pin generated with additional dash [#3](https://github.com/hassio-addons/repository/issues/3)
 
-## 1.0.0 - 2017-08-14
+## [v1.0.0](https://github.com/hassio-addons/addon-homebridge/tree/v1.0.0) (2017-08-14)
 ### Added
 - First version of the Homebridge Add-on
 - This CHANGELOG file
