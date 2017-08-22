@@ -22,8 +22,11 @@ RUN apk add --no-cache jq git python make g++ libffi-dev openssl-dev dbus \
     npm set unsafe-perm true && \
     npm -g install \
       node-gyp \
-      homebridge@0.4.26 \
-      homebridge-homeassistant@2.3.0 && \
+      homebridge@0.4.27 \
+      homebridge-homeassistant@2.3.0 \
+      homebridge-config-ui \
+      homebridge-broadlink-rm \
+      homebridge-mi-aqara && \
     chmod a+x /run.sh
 
 # Copy configuration files
