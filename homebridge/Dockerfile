@@ -24,6 +24,9 @@ RUN apk add --no-cache jq git python make g++ libffi-dev openssl-dev dbus \
       node-gyp \
       homebridge@0.4.26 \
       homebridge-homeassistant@2.3.0 && \
+      homebridge-config-ui \
+      homebridge-broadlink-rm \
+      homebridge-mi-aqara && \
     chmod a+x /run.sh
 
 # Copy configuration files
