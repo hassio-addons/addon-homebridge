@@ -24,7 +24,8 @@ RUN apk add --no-cache jq git python make g++ libffi-dev openssl-dev dbus \
       node-gyp \
       homebridge@0.4.26 \
       homebridge-homeassistant@2.3.0 && \
-    chmod a+x /run.sh
+    chmod a+x /run.sh && \
+    apk del g++ make git
 
 # Copy configuration files
 COPY files/avahi-daemon.conf /etc/avahi/
