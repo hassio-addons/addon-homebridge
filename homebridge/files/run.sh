@@ -282,7 +282,12 @@ remove_old_pid_files() {
 #   None
 # ------------------------------------------------------------------------------
 start_avahi_daemon() {
+  local main_interface
   display_status_message 'Starting Avahi daemon'
+
+  # Only broadcast on the main interface
+  main_interface=$(ip route show default | awk '/default/ {print $5}')
+  sed -i "s/#allow-interfaces=.*/allow-interfaces=${main_interface}/" /etc/avahi/avahi-daemon.conf
 
   if [[ "$DEBUG" == "true" ]];
   then
