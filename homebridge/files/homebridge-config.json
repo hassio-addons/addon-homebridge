@@ -9,6 +9,21 @@
   "accessories": [],
   "platforms": [
     {
+    "platform": "config",
+    "name": "Config",
+    "port": 8080,
+    "log": "/var/log/homebridge.stdout.log",
+    "error_log": "/var/log/homebridge.stderr.log",
+    "restart": "/usr/local/bin/supervisorctl restart homebridge"
+},
+    {
+    "platforms": [{
+        "platform": "MiAqaraPlatform",
+        "sid": ["6409802da3b3"],
+        "password": ["02i44k56zrgg578b"]
+    }]
+},
+    {
       "platform": "HomeAssistant",
       "name": "HomeAssistant",
       "host": "http://172.17.0.1:8123",
