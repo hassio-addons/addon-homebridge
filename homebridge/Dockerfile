@@ -24,7 +24,7 @@ RUN apk add --no-cache jq git python make g++ libffi-dev openssl-dev dbus \
     npm -g install \
       node-gyp \
       homebridge@0.4.27 \
-      homebridge-homeassistant@2.3.0 \
+      homebridge-homeassistant@2.3.1 \
       homebridge-config-ui \
       homebridge-broadlink-rm \
       homebridge-mi-air-purifier miio \
