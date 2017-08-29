@@ -29,6 +29,7 @@ RUN apk add --no-cache jq git python make g++ libffi-dev openssl-dev dbus \
       homebridge-broadlink-rm \
       homebridge-mi-air-purifier miio \
       homebridge-xiaomi-mi-robot-vacuum \
+      homebridge-camera-ffmpeg \
       homebridge-mi-aqara && \
     chmod a+x /run.sh
 
