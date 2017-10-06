@@ -25,7 +25,6 @@ RUN apk add --no-cache jq git python make g++ libffi-dev openssl-dev dbus \
       node-gyp \
       homebridge \
       homebridge-homeassistant \
-      homebridge-config-ui \
       homebridge-broadlink-rm \
       homebridge-mi-air-purifier miio \
       homebridge-xiaomi-mi-robot-vacuum \
