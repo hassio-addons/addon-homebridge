@@ -6,7 +6,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
--
+
+- Migrated to the new Hass.io build system
 
 ## [v1.0.3](https://github.com/hassio-addons/addon-homebridge/tree/v1.0.3) (2017-08-21)
 [Full Changelog](https://github.com/hassio-addons/addon-homebridge/compare/v1.0.2...v1.0.3)
