@@ -11,7 +11,7 @@ COPY files/run.sh /
 # Setup base
 RUN apk add --no-cache jq git python make g++ libffi-dev openssl-dev dbus \
       avahi-compat-libdns_sd avahi-dev avahi-tools avahi-ui-tools \
-      nodejs-current yarn && \
+      nodejs-current yarn ffmpeg && \
     mkdir -p /var/run/dbus && \
     mkdir -p /var/run/avahi-daemon && \
     chown messagebus:messagebus /var/run/dbus && \
