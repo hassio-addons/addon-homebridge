@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning][semantic-versioning].
 
 ## Unreleased
 
+No unreleased changes yet.
+
+## [v2.0.0] (2017-10-20)
+
+[Full Changelog][v1.0.3-v2.0.0]
+
 ### Added
 
 - Added CodeClimate
@@ -41,7 +47,7 @@ and this project adheres to [Semantic Versioning][semantic-versioning].
 
 ## [v1.0.3] (2017-08-21)
 
-[Full Changelog][v1.0.3-v1.0.3]
+[Full Changelog][v1.0.2-v1.0.3]
 
 ### Fixed
 
@@ -77,19 +83,21 @@ and this project adheres to [Semantic Versioning][semantic-versioning].
 - First version of the Homebridge Add-on
 - This CHANGELOG file
 
+[11]: https://github.com/hassio-addons/addon-homebridge/issues/11
+[16]: https://github.com/hassio-addons/addon-homebridge/issues/16
+[2]: https://github.com/hassio-addons/repository/issues/2
+[26]: https://github.com/hassio-addons/addon-homebridge/issues/26
+[3]: https://github.com/hassio-addons/repository/issues/3
+[5]: https://github.com/hassio-addons/addon-homebridge/issues/3
+[6]: https://github.com/hassio-addons/repository/issues/6
 [keep-a-changelog]: http://keepachangelog.com/en/1.0.0/
 [semantic-versioning]: http://semver.org/spec/v2.0.0.html
 [v1.0.0-v1.0.1]: https://github.com/hassio-addons/addon-homebridge/compare/v1.0.0...v1.0.1
-[v1.0.1-v1.0.2]: https://github.com/hassio-addons/addon-homebridge/compare/v1.0.1...v1.0.2
-[v1.0.3-v1.0.3]: https://github.com/hassio-addons/addon-homebridge/compare/v1.0.2...v1.0.3
 [v1.0.0]: https://github.com/hassio-addons/addon-homebridge/tree/v1.0.0
+[v1.0.1-v1.0.2]: https://github.com/hassio-addons/addon-homebridge/compare/v1.0.1...v1.0.2
 [v1.0.1]: https://github.com/hassio-addons/addon-homebridge/tree/v1.0.1
+[v1.0.2-v1.0.3]: https://github.com/hassio-addons/addon-homebridge/compare/v1.0.2...v1.0.3
 [v1.0.2]: https://github.com/hassio-addons/addon-homebridge/tree/v1.0.2
+[v1.0.3-v2.0.0]: https://github.com/hassio-addons/addon-homebridge/compare/v1.0.3...v2.0.0
 [v1.0.3]: https://github.com/hassio-addons/addon-homebridge/tree/v1.0.3
-[3]: https://github.com/hassio-addons/repository/issues/3
-[6]: https://github.com/hassio-addons/repository/issues/6
-[2]: https://github.com/hassio-addons/repository/issues/2
-[5]: https://github.com/hassio-addons/addon-homebridge/issues/3
-[11]: https://github.com/hassio-addons/addon-homebridge/issues/11
-[16]: https://github.com/hassio-addons/addon-homebridge/issues/16
-[26]: https://github.com/hassio-addons/addon-homebridge/issues/26
+[v2.0.0]: https://github.com/hassio-addons/addon-homebridge/tree/v2.0.0
