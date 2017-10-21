@@ -1,0 +1,10 @@
+#!/usr/bin/with-contenv bash
+# ==============================================================================
+# Community Hass.io Add-ons: Homebridge
+# Starts the D-Bus daemon
+# ==============================================================================
+# shellcheck disable=SC1091
+source /usr/lib/hassio-addons/base.sh
+
+dbus-daemon --system --nofork \
+  || hass.die 'Failed to start D-Bus daemon'

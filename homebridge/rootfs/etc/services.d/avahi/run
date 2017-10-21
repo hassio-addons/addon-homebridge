@@ -1,0 +1,20 @@
+#!/usr/bin/with-contenv bash
+# ==============================================================================
+# Community Hass.io Add-ons: Homebridge
+# Start the Avahi daemon
+# ==============================================================================
+# shellcheck disable=SC1091
+source /usr/lib/hassio-addons/base.sh
+
+# Wait until D-Bus is available
+until [[ -e /var/run/dbus/system_bus_socket ]];
+do
+  sleep 1
+done
+
+# Start the Avahi daemon
+if hass.debug; then
+  avahi-daemon --debug
+else
+  avahi-daemon
+fi

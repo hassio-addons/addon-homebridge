@@ -1,10 +1,10 @@
 {
     "squash": false,
     "build_from": {
-        "aarch64": "homeassistant/aarch64-base:latest",
-        "amd64": "homeassistant/amd64-base:latest",
-        "armhf": "homeassistant/armhf-base:latest",
-        "i386": "homeassistant/i386-base:latest"
+        "aarch64": "hassioaddons/base-aarch64:1.0.0",
+        "amd64": "hassioaddons/base-amd64:1.0.0",
+        "armhf": "hassioaddons/base-armhf:1.0.0",
+        "i386": "hassioaddons/base-i386:1.0.0"
     },
     "args": {}
 }

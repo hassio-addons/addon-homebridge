@@ -1,33 +1,62 @@
-ARG BUILD_FROM=homeassistant/amd64-base:latest
+ARG BUILD_FROM=hassioaddons/base-amd64:1.0.0
 FROM ${BUILD_FROM}
-MAINTAINER Franck Nijhof <frenck@geekchimp.com>
 
-# Add env
-ENV LANG="C.UTF-8"
-
-# Copy run file
-COPY files/run.sh /
+# Copy root filesystem
+COPY rootfs /
 
 # Setup base
-RUN apk add --no-cache jq git python make g++ libffi-dev openssl-dev dbus \
-      avahi-compat-libdns_sd avahi-dev avahi-tools avahi-ui-tools \
-      nodejs-current yarn && \
-    mkdir -p /var/run/dbus && \
-    mkdir -p /var/run/avahi-daemon && \
-    chown messagebus:messagebus /var/run/dbus && \
-    chown avahi:avahi /var/run/avahi-daemon && \
-    yarn global add npm && \
-    yarn cache clean && \
-    apk del yarn && \
-    npm set unsafe-perm true && \
-    npm -g install \
-      node-gyp \
-      homebridge@0.4.26 \
-      homebridge-homeassistant@2.3.1 && \
-    chmod a+x /run.sh
+RUN \
+    apk add --no-cache --virtual .build-dependencies \
+        g++ \
+        git \
+        avahi-dev \
+        libffi-dev \
+        make \
+        openssl-dev \
+        yarn \
+        python \
+    \
+    && apk add --no-cache \
+        avahi-compat-libdns_sd \
+        avahi \
+        dbus \
+        nodejs-current \
+    \
+    && yarn global add npm \
+    \
+    && npm set unsafe-perm true \
+    \
+    && npm -g install \
+        node-gyp \
+        homebridge@0.4.28 \
+        homebridge-homeassistant@2.3.1 \
+    \
+    && yarn cache clean \
+    \
+    && apk del --purge .build-dependencies
 
-# Copy configuration files
-COPY files/avahi-daemon.conf /etc/avahi/
-COPY files/homebridge-config.json /root/
+CMD [ "/usr/bin/run.sh" ]
 
-CMD [ "/run.sh" ]
+# Build arugments
+ARG BUILD_ARCH
+ARG BUILD_DATE
+ARG BUILD_REF
+ARG BUILD_VERSION
+
+# Labels
+LABEL \
+    io.hass.name="Homebridge" \
+    io.hass.description="HomeKit support for your Home Assistant instance using Homebridge" \
+    io.hass.arch="${BUILD_ARCH}" \
+    io.hass.type="addon" \
+    io.hass.version=${BUILD_VERSION} \
+    maintainer="Franck Nijhof <frenck@addons.community>" \
+    org.label-schema.description="HomeKit support for your Home Assistant instance using Homebridge" \
+    org.label-schema.build-date=${BUILD_DATE} \
+    org.label-schema.name="Homebridge" \
+    org.label-schema.schema-version="1.0" \
+    org.label-schema.url="https://addons.community" \
+    org.label-schema.usage="https://github.com/hassio-addons/addon-homebridge/tree/master/README.md" \
+    org.label-schema.vcs-ref=${BUILD_REF} \
+    org.label-schema.vcs-url="https://github.com/hassio-addons/addon-homebridge" \
+    org.label-schema.vendor="Community Hass.io Add-ons"
