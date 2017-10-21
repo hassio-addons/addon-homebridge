@@ -11,10 +11,11 @@
     {
       "platform": "HomeAssistant",
       "name": "HomeAssistant",
-      "host": "http://172.17.0.1:8123",
+      "host": "http://homeassistant:8123",
       "password": "",
       "default_visibility": "visible",
       "supported_types": [
+        "automation",
         "binary_sensor",
         "climate",
         "cover",
@@ -25,11 +26,13 @@
         "light",
         "lock",
         "media_player",
+        "remote",
         "scene",
         "sensor",
         "switch"
       ],
-      "logging": true
+      "logging": true,
+      "verify_ssl": true
     }
   ]
 }
