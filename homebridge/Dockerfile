@@ -6,23 +6,28 @@ COPY rootfs /
 
 # Setup base
 RUN \
-    apk add --no-cache --virtual .build-dependencies \
+    apk add --no-cache \
+        --repository http://nl.alpinelinux.org/alpine/edge/main \
+        libuv \
+    \
+    && apk add --no-cache \
+        --repository http://dl-cdn.alpinelinux.org/alpine/edge/community \
+        nodejs-current \
+        nodejs-current-npm \
+    \
+    && apk add --no-cache --virtual .build-dependencies \
         avahi-dev \
         g++ \
         libffi-dev \
         make \
         openssl-dev \
         python \
-        yarn \
     \
     && apk add --no-cache \
         avahi \
         avahi-compat-libdns_sd \
         dbus \
         git \
-        nodejs-current \
-    \
-    && yarn global add npm \
     \
     && npm set unsafe-perm true \
     \
@@ -30,8 +35,6 @@ RUN \
         node-gyp \
         homebridge@0.4.28 \
         homebridge-homeassistant@2.3.1 \
-    \
-    && yarn cache clean \
     \
     && apk del --purge .build-dependencies
 
