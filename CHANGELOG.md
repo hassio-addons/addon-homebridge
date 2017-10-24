@@ -11,6 +11,10 @@ and this project adheres to [Semantic Versioning][semantic-versioning].
 
 - Made git available by default #44
 
+### Fixed
+
+- Won't start; sed: unmatched '/' #45
+
 ### Changed
 
 - Use the Hass.io to Home Assistant proxy by default

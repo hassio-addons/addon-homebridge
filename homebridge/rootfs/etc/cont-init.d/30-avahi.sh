@@ -14,7 +14,10 @@ declare hostname
 if hass.config.has_value 'avahi_interfaces'; then
     interfaces=$(hass.config.get 'avahi_interfaces')
 else
-    interfaces=$(ip route show default | awk '/default/ {print $5}')
+    interfaces=$(ip route show default \
+        | awk -vORS=, '/default/ {print $5}' \
+        | sed 's/,$/\n/'
+    )
     hass.log.debug "Detected Avahi interfaces: ${interfaces}"
 fi
 sed -i "s/#allow-interfaces=.*/allow-interfaces=hassio,${interfaces}/" \
