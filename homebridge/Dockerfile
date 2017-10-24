@@ -7,19 +7,19 @@ COPY rootfs /
 # Setup base
 RUN \
     apk add --no-cache --virtual .build-dependencies \
-        g++ \
-        git \
         avahi-dev \
+        g++ \
         libffi-dev \
         make \
         openssl-dev \
-        yarn \
         python \
+        yarn \
     \
     && apk add --no-cache \
-        avahi-compat-libdns_sd \
         avahi \
+        avahi-compat-libdns_sd \
         dbus \
+        git \
         nodejs-current \
     \
     && yarn global add npm \
