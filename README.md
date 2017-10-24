@@ -248,9 +248,9 @@ http://0pointerde/avahi-compat?s=libdns_sd&e=nodejs&f=DNSServiceRegister
 ### Homebridge cannot connect or login to Home Assistant
 
 Please be sure to set the `host` and `password` parameters in the
-`/config/homebridge/config.json` file. 
+`/config/homebridge/config.json` file.
 
-We recommend using `http://hassio/homeassistant` as the `host` with an 
+We recommend using `http://hassio/homeassistant` as the `host` with an
 empty `password`, which allows Homebridge to talk to Home Assistant directly.
 
 ### My iOS App Cannot Find Homebridge/Home Assistant
