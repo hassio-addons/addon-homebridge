@@ -7,7 +7,9 @@ and this project adheres to [Semantic Versioning][semantic-versioning].
 
 ## Unreleased
 
-No unreleased changes yet.
+### Added
+
+- Made git available by default #44
 
 ## [v2.0.0] (2017-10-20)
 
