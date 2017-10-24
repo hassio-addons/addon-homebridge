@@ -11,7 +11,7 @@
     {
       "platform": "HomeAssistant",
       "name": "HomeAssistant",
-      "host": "http://homeassistant:8123",
+      "host": "http://hassio/homeassistant",
       "password": "",
       "default_visibility": "visible",
       "supported_types": [
