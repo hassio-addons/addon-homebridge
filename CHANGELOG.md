@@ -18,6 +18,7 @@ and this project adheres to [Semantic Versioning][semantic-versioning].
 ### Changed
 
 - Use the Hass.io to Home Assistant proxy by default
+- Upgraded addon-base image to v1.0.1
 
 ## [v2.0.0] (2017-10-20)
 
