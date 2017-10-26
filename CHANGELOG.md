@@ -7,7 +7,9 @@ and this project adheres to [Semantic Versioning][semantic-versioning].
 
 ## Unreleased
 
-No unreleased changes yet.
+### Changed
+
+- Upgraded NodeJS to 8.x #47
 
 ## [v2.0.1] (2017-10-25)
 
@@ -46,10 +48,10 @@ No unreleased changes yet.
 
 ### Fixed
 
-- Can't use curl with this addon [#11][11]
-- Homebridge will not show in iOS app [#5][5]
-- Automatic restart needed [#16][16]
-- Siri will not lock or unlock a door. Home app will do this just fine. [#26][26]
+- Can't use curl with this addon #11
+- Homebridge will not show in iOS app #5
+- Automatic restart needed #16
+- Siri will not lock or unlock a door. Home app will do this just fine. #26
 
 ### Changed
 
@@ -68,7 +70,7 @@ No unreleased changes yet.
 
 ### Fixed
 
-- Adds 'default_visbility' flag to the default configuration of Homebridge [#2][2]
+- Adds 'default_visbility' flag to the default configuration of Homebridge
 
 ## [v1.0.2] (2017-08-20)
 
@@ -83,7 +85,7 @@ No unreleased changes yet.
 
 ### Fixes
 
-- There was an error when installed the plugin [#6][6]
+- There was an error when installed the plugin
 
 ## [v1.0.1] (2017-08-15)
 
@@ -91,7 +93,7 @@ No unreleased changes yet.
 
 ### Fixes
 
-- Homebridge pin generated with additional dash [#3][3]
+- Homebridge pin generated with additional dash
 
 ## [v1.0.0] (2017-08-14)
 
@@ -100,13 +102,6 @@ No unreleased changes yet.
 - First version of the Homebridge Add-on
 - This CHANGELOG file
 
-[11]: https://github.com/hassio-addons/addon-homebridge/issues/11
-[16]: https://github.com/hassio-addons/addon-homebridge/issues/16
-[2]: https://github.com/hassio-addons/repository/issues/2
-[26]: https://github.com/hassio-addons/addon-homebridge/issues/26
-[3]: https://github.com/hassio-addons/repository/issues/3
-[5]: https://github.com/hassio-addons/addon-homebridge/issues/3
-[6]: https://github.com/hassio-addons/repository/issues/6
 [keep-a-changelog]: http://keepachangelog.com/en/1.0.0/
 [semantic-versioning]: http://semver.org/spec/v2.0.0.html
 [v1.0.0-v1.0.1]: https://github.com/hassio-addons/addon-homebridge/compare/v1.0.0...v1.0.1
