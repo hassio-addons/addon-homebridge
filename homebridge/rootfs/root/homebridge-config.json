@@ -28,8 +28,10 @@
         "media_player",
         "remote",
         "scene",
+        "script",
         "sensor",
-        "switch"
+        "switch",
+        "vacuum"
       ],
       "logging": true,
       "verify_ssl": true
