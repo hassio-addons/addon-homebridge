@@ -249,10 +249,9 @@ http://0pointerde/avahi-compat?s=libdns_sd&e=nodejs&f=DNSServiceRegister
 
 Please be sure to set the `host` and `password` parameters in the
 `/config/homebridge/config.json` file.
-Normally `http://homeassistant:8123` should be a sufficient `host` to use when
-running hass.io. The `password` is left empty by default, however, if a
-password protects your Home Assistant instance, you might also need to
-set the `password` option.
+
+We recommend using `http://hassio/homeassistant` as the `host` with an
+empty `password`, which allows Homebridge to talk to Home Assistant directly.
 
 ### My iOS App Cannot Find Homebridge/Home Assistant
 
