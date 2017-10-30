@@ -9,6 +9,14 @@ and this project adheres to [Semantic Versioning][semantic-versioning].
 
 No unreleased changes yet.
 
+## [v2.1.1] (2017-10-30)
+
+[Full Changelog][v2.1.0-v2.1.1]
+
+### Changed
+
+- Upgraded Homebridge to v0.4.29
+
 ## [v2.1.0] (2017-10-26)
 
 [Full Changelog][v2.0.1-v2.1.0]
@@ -123,4 +131,6 @@ No unreleased changes yet.
 [v2.0.0]: https://github.com/hassio-addons/addon-homebridge/tree/v2.0.0
 [v2.0.1-v2.1.0]: https://github.com/hassio-addons/addon-homebridge/compare/v2.0.1...v2.1.0
 [v2.0.1]: https://github.com/hassio-addons/addon-homebridge/tree/v2.0.1
+[v2.1.0-v2.1.1]: https://github.com/hassio-addons/addon-homebridge/compare/v2.1.0...v2.1.1
 [v2.1.0]: https://github.com/hassio-addons/addon-homebridge/tree/v2.1.0
+[v2.1.1]: https://github.com/hassio-addons/addon-homebridge/tree/v2.1.1
