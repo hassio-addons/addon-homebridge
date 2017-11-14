@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning][semantic-versioning].
 ### Changed
 
 - Upgraded Homebridge to v0.4.33
+- Upgraded `homebridge-homeassistant` to v3.0.2
 
 ### Removed
 
