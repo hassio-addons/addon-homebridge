@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning][semantic-versioning].
 
 ## Unreleased
 
+No unreleased changes yet.
+
+## [v2.1.2] (2017-11-14)
+
+[Full Changelog][v2.1.1-v2.1.2]
+
 ### Changed
 
 - Upgraded Homebridge to v0.4.33
@@ -15,6 +21,7 @@ and this project adheres to [Semantic Versioning][semantic-versioning].
 ### Removed
 
 - Removes `repository.json` to prevent user to install wrong repo
+- Removes Gratipay from README, since it is EOL
 
 ## [v2.1.1] (2017-10-30)
 
@@ -140,4 +147,6 @@ and this project adheres to [Semantic Versioning][semantic-versioning].
 [v2.0.1]: https://github.com/hassio-addons/addon-homebridge/tree/v2.0.1
 [v2.1.0-v2.1.1]: https://github.com/hassio-addons/addon-homebridge/compare/v2.1.0...v2.1.1
 [v2.1.0]: https://github.com/hassio-addons/addon-homebridge/tree/v2.1.0
+[v2.1.1-v2.1.2]: https://github.com/hassio-addons/addon-homebridge/compare/v2.1.1...v2.1.2
 [v2.1.1]: https://github.com/hassio-addons/addon-homebridge/tree/v2.1.1
+[v2.1.2]: https://github.com/hassio-addons/addon-homebridge/tree/v2.1.2
