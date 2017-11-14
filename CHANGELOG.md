@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning][semantic-versioning].
 
 ## Unreleased
 
+### Changed
+
+- Upgraded Homebridge to v0.4.33
+
 ### Removed
 
 - Removes `repository.json` to prevent user to install wrong repo
