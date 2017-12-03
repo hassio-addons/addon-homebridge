@@ -1,9 +1,6 @@
 ARG BUILD_FROM=hassioaddons/base-amd64:1.2.0
 FROM ${BUILD_FROM}
 
-# Copy root filesystem
-COPY rootfs /
-
 # Setup base
 RUN \
     apk add --no-cache --virtual .build-dependencies \
@@ -30,6 +27,9 @@ RUN \
         homebridge-homeassistant@3.0.2 \
     \
     && apk del --purge .build-dependencies
+
+# Copy root filesystem
+COPY rootfs /
 
 # Build arugments
 ARG BUILD_ARCH
