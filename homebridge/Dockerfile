@@ -1,4 +1,4 @@
-ARG BUILD_FROM=hassioaddons/base-amd64:1.0.1
+ARG BUILD_FROM=hassioaddons/base-amd64:1.2.0
 FROM ${BUILD_FROM}
 
 # Copy root filesystem
@@ -6,16 +6,7 @@ COPY rootfs /
 
 # Setup base
 RUN \
-    apk add --no-cache \
-        --repository http://nl.alpinelinux.org/alpine/edge/main \
-        libuv \
-    \
-    && apk add --no-cache \
-        --repository http://dl-cdn.alpinelinux.org/alpine/edge/community \
-        nodejs-current \
-        nodejs-current-npm \
-    \
-    && apk add --no-cache --virtual .build-dependencies \
+    apk add --no-cache --virtual .build-dependencies \
         avahi-dev \
         g++ \
         libffi-dev \
@@ -28,6 +19,8 @@ RUN \
         avahi-compat-libdns_sd \
         dbus \
         git \
+        nodejs \
+        nodejs-npm \
     \
     && npm set unsafe-perm true \
     \
