@@ -14,7 +14,7 @@ done
 
 # Start the Avahi daemon
 if hass.debug; then
-  avahi-daemon --debug
+  exec avahi-daemon --debug
 else
-  avahi-daemon
+  exec avahi-daemon
 fi

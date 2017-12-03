@@ -1,10 +1,9 @@
-#!/usr/bin/with-contenv bash
+#!/usr/bin/execlineb -S0
 # ==============================================================================
 # Community Hass.io Add-ons: Homebridge
-# Starts the D-Bus daemon
+# Take down the S6 supervision tree when the avahi daemon fails
 # ==============================================================================
-# shellcheck disable=SC1091
-source /usr/lib/hassio-addons/base.sh
+if -n { s6-test $# -ne 0 }
+if -n { s6-test ${1} -eq 256 }
 
-exec dbus-daemon --system --nofork \
-  || hass.die 'Failed to start D-Bus daemon'
+s6-svscanctl -t /var/run/s6/services

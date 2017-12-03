@@ -31,8 +31,6 @@ RUN \
     \
     && apk del --purge .build-dependencies
 
-CMD [ "/usr/bin/run.sh" ]
-
 # Build arugments
 ARG BUILD_ARCH
 ARG BUILD_DATE
