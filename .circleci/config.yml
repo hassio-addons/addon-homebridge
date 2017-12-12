@@ -42,35 +42,24 @@ defaults: &defaults
                   --target homebridge \
                   --${ARCH}
               fi
-      - deploy:
-          name: Send notification to Microbadger
-          command: |
-              if [[ "${CIRCLE_BRANCH}" = "master" || ! -z "${CIRCLE_TAG:-}" ]];
-              then
-                curl -X POST https://hooks.microbadger.com/images/${MICROBADGER_WEBHOOK}
-              fi
 
 jobs:
   aarch64:
     <<: *defaults
     environment:
       ARCH: aarch64
-      MICROBADGER_WEBHOOK: hassioaddons/homebridge-aarch64/K5oZAjqRvwfHXHX56Bcbi1fUc2E=
   amd64:
     <<: *defaults
     environment:
       ARCH: amd64
-      MICROBADGER_WEBHOOK: hassioaddons/homebridge-amd64/Kzk0TqgVBUmgBSuvaU6VaT5n0yY=
   armhf:
     <<: *defaults
     environment:
       ARCH: armhf
-      MICROBADGER_WEBHOOK: hassioaddons/homebridge-armhf/E88LGwAIssKB1tUisfCCbjZ7kh0=
   i386:
     <<: *defaults
     environment:
       ARCH: i386
-      MICROBADGER_WEBHOOK: hassioaddons/homebridge-i386/jZ5g7ZUyCsppE3tDHMTjZh3H8k0=
 
 workflows:
   version: 2
