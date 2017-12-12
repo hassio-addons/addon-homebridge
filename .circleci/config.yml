@@ -29,6 +29,7 @@ defaults: &defaults
                   -v "$PWD":/docker \
                   hassioaddons/build-env:latest \
                   --image "hassioaddons/homebridge-{arch}" \
+                  --cache-tag test \
                   --git \
                   --target homebridge \
                   --${ARCH} \
@@ -39,6 +40,7 @@ defaults: &defaults
                   -v /var/run/docker.sock:/var/run/docker.sock \
                   -v "$PWD":/docker \
                   hassioaddons/build-env:latest \
+                  --cache-tag test \
                   --image "hassioaddons/homebridge-{arch}" \
                   --git \
                   --target homebridge \
