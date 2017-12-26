@@ -13,7 +13,7 @@
       "name": "HomeAssistant",
       "host": "http://hassio/homeassistant",
       "password": "",
-      "default_visibility": "visible",
+      "default_visibility": "hidden",
       "supported_types": [
         "automation",
         "binary_sensor",
