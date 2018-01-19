@@ -407,7 +407,7 @@ SOFTWARE.
 [issue]: https://github.com/hassio-addons/addon-homebridge/issues
 [keepchangelog]: http://keepachangelog.com/en/1.0.0/
 [license-shield]: https://img.shields.io/github/license/hassio-addons/addon-homebridge.svg
-[maintenance-shield]: https://img.shields.io/maintenance/yes/2017.svg
+[maintenance-shield]: https://img.shields.io/maintenance/yes/2018.svg
 [nfarina]: https://github.com/nfarina
 [olivierguerriat-hassio-addons]: https://github.com/olivierguerriat/hassio-addons
 [olivierguerriat]: https://github.com/olivierguerriat
