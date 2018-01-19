@@ -9,6 +9,21 @@ and this project adheres to [Semantic Versioning][semantic-versioning].
 
 No unreleased changes yet.
 
+## [v2.3.0] (2018-12-19)
+
+[Full Changelog][v2.2.0-v2.3.0]
+
+### Changed
+
+- Prevents possible future Docker login issue
+- Removes Microbadger notification hooks
+- Pass local CircleCI Docker socket into the build container
+- Use image tagged as test as a cache resource
+- Sets the default visibilit to hidden for new installs
+- Upgrades add-on base image to v1.3.2
+- Upgrades Homebridge to v0.4.36
+- Updated maintenance year, it is 2018
+
 ## [v2.2.0] (2017-12-03)
 
 [Full Changelog][v2.1.2-v2.2.0]
@@ -162,4 +177,6 @@ No unreleased changes yet.
 [v2.1.1]: https://github.com/hassio-addons/addon-homebridge/tree/v2.1.1
 [v2.1.2-v2.2.0]: https://github.com/hassio-addons/addon-homebridge/compare/v2.1.2...v2.2.0
 [v2.1.2]: https://github.com/hassio-addons/addon-homebridge/tree/v2.1.2
+[v2.2.0-v2.3.0]: https://github.com/hassio-addons/addon-homebridge/compare/v2.2.0...v2.3.0
 [v2.2.0]: https://github.com/hassio-addons/addon-homebridge/tree/v2.2.0
+[v2.3.0]: https://github.com/hassio-addons/addon-homebridge/tree/v2.3.0
