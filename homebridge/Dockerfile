@@ -23,7 +23,7 @@ RUN \
     \
     && npm -g install \
         node-gyp \
-        homebridge@0.4.36 \
+        homebridge@0.4.38 \
         homebridge-homeassistant@3.0.2 \
     \
     && apk del --purge .build-dependencies
