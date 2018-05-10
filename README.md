@@ -7,7 +7,6 @@
 [![License][license-shield]](LICENSE.md)
 
 [![CircleCI][circleci-shield]][circleci]
-[![Code Climate][codeclimate-shield]][codeclimate]
 [![Bountysource][bountysource-shield]][bountysource]
 [![Discord][discord-shield]][discord]
 [![Community Forum][forum-shield]][forum]
@@ -384,8 +383,6 @@ SOFTWARE.
 [circleci]: https://circleci.com/gh/hassio-addons/addon-homebridge
 [ckuburlis-homebridge-docker]: https://github.com/ckuburlis/homebridge-docker
 [ckuburlis]: https://github.com/ckuburlis
-[codeclimate-shield]: https://img.shields.io/badge/code%20climate-protected-brightgreen.svg
-[codeclimate]: https://codeclimate.com/github/hassio-addons/addon-homebridge
 [commits-shield]: https://img.shields.io/github/commit-activity/y/hassio-addons/addon-homebridge.svg
 [commits]: https://github.com/hassio-addons/addon-homebridge/commits/master
 [contributors]: https://github.com/hassio-addons/addon-homebridge/graphs/contributors
