@@ -2,17 +2,17 @@
 
 [![GitHub Release][releases-shield]][releases]
 ![Project Stage][project-stage-shield]
+[![License][license-shield]](LICENSE.md)
+
+[![GitLab CI][gitlabci-shield]][gitlabci]
 ![Project Maintenance][maintenance-shield]
 [![GitHub Activity][commits-shield]][commits]
-[![License][license-shield]](LICENSE.md)
 
 [![Bountysource][bountysource-shield]][bountysource]
 [![Discord][discord-shield]][discord]
 [![Community Forum][forum-shield]][forum]
 
-[![Patreon][patreon-shield]][patreon]
-[![PayPal][paypal-shield]][paypal]
-[![Bitcoin][bitcoin-shield]][bitcoin]
+[![Buy me a coffee][buymeacoffee-shield]][buymeacoffee]
 
 This add-on provides the installation, configuration, and integration for
 [Homebridge][homebridge].
@@ -55,21 +55,25 @@ Please read the rest of this document further instructions.
 [![Docker Version][armhf-version-shield]][armhf-microbadger]
 [![Docker Layers][armhf-layers-shield]][armhf-microbadger]
 [![Docker Pulls][armhf-pulls-shield]][armhf-dockerhub]
+[![Anchore Image Overview][armhf-anchore-shield]][armhf-anchore]
 
 [![Docker Architecture][aarch64-arch-shield]][aarch64-dockerhub]
 [![Docker Version][aarch64-version-shield]][aarch64-microbadger]
 [![Docker Layers][aarch64-layers-shield]][aarch64-microbadger]
 [![Docker Pulls][aarch64-pulls-shield]][aarch64-dockerhub]
+[![Anchore Image Overview][aarch64-anchore-shield]][aarch64-anchore]
 
 [![Docker Architecture][amd64-arch-shield]][amd64-dockerhub]
 [![Docker Version][amd64-version-shield]][amd64-microbadger]
 [![Docker Layers][amd64-layers-shield]][amd64-microbadger]
 [![Docker Pulls][amd64-pulls-shield]][amd64-dockerhub]
+[![Anchore Image Overview][amd64-anchore-shield]][amd64-anchore]
 
 [![Docker Architecture][i386-arch-shield]][i386-dockerhub]
 [![Docker Version][i386-version-shield]][i386-microbadger]
 [![Docker Layers][i386-layers-shield]][i386-microbadger]
 [![Docker Pulls][i386-pulls-shield]][i386-dockerhub]
+[![Anchore Image Overview][i386-anchore-shield]][i386-anchore]
 
 ## Configuration
 
@@ -357,28 +361,34 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
+[aarch64-anchore-shield]: https://anchore.io/service/badges/image/e1fe7eff6060158fd4f39bb33fd9cf79cff0d6f15cbbbdb748288c14af47098c
+[aarch64-anchore]: https://anchore.io/image/dockerhub/hassioaddons%2Fhomebridge-aarch64%3Alatest
 [aarch64-arch-shield]: https://img.shields.io/badge/architecture-aarch64-blue.svg
 [aarch64-dockerhub]: https://hub.docker.com/r/hassioaddons/homebridge-aarch64
 [aarch64-layers-shield]: https://images.microbadger.com/badges/image/hassioaddons/homebridge-aarch64.svg
 [aarch64-microbadger]: https://microbadger.com/images/hassioaddons/homebridge-aarch64
 [aarch64-pulls-shield]: https://img.shields.io/docker/pulls/hassioaddons/homebridge-aarch64.svg
 [aarch64-version-shield]: https://images.microbadger.com/badges/version/hassioaddons/homebridge-aarch64.svg
+[amd64-anchore-shield]: https://anchore.io/service/badges/image/2b9a78e147678b80fc0e8c63537c669b803f605555d055fba8fe5bd01a5ea60c
+[amd64-anchore]: https://anchore.io/image/dockerhub/hassioaddons%2Fhomebridge-amd64%3Alatest
 [amd64-arch-shield]: https://img.shields.io/badge/architecture-amd64-blue.svg
 [amd64-dockerhub]: https://hub.docker.com/r/hassioaddons/homebridge-amd64
 [amd64-layers-shield]: https://images.microbadger.com/badges/image/hassioaddons/homebridge-amd64.svg
 [amd64-microbadger]: https://microbadger.com/images/hassioaddons/homebridge-amd64
 [amd64-pulls-shield]: https://img.shields.io/docker/pulls/hassioaddons/homebridge-amd64.svg
 [amd64-version-shield]: https://images.microbadger.com/badges/version/hassioaddons/homebridge-amd64.svg
+[armhf-anchore-shield]: https://anchore.io/service/badges/image/7a31261290489f95ff24e504a87b93d5d852f4f81b403a3de2f55db908e1e782
+[armhf-anchore]: https://anchore.io/image/dockerhub/hassioaddons%2Fhomebridge-armhf%3Alatest
 [armhf-arch-shield]: https://img.shields.io/badge/architecture-armhf-blue.svg
 [armhf-dockerhub]: https://hub.docker.com/r/hassioaddons/homebridge-armhf
 [armhf-layers-shield]: https://images.microbadger.com/badges/image/hassioaddons/homebridge-armhf.svg
 [armhf-microbadger]: https://microbadger.com/images/hassioaddons/homebridge-armhf
 [armhf-pulls-shield]: https://img.shields.io/docker/pulls/hassioaddons/homebridge-armhf.svg
 [armhf-version-shield]: https://images.microbadger.com/badges/version/hassioaddons/homebridge-armhf.svg
-[bitcoin-shield]: https://img.shields.io/badge/donate-bitcoin-blue.svg
-[bitcoin]: https://blockchain.info/payment_request?address=3GVzgN6NpVtfXnyg5dQnaujtqVTEDBCtAH
 [bountysource-shield]: https://img.shields.io/bountysource/team/hassio-addons/activity.svg
 [bountysource]: https://www.bountysource.com/teams/hassio-addons/issues
+[buymeacoffee-shield]: https://www.buymeacoffee.com/assets/img/guidelines/download-assets-sm-2.svg
+[buymeacoffee]: https://www.buymeacoffee.com/frenck
 [ckuburlis-homebridge-docker]: https://github.com/ckuburlis/homebridge-docker
 [ckuburlis]: https://github.com/ckuburlis
 [commits-shield]: https://img.shields.io/github/commit-activity/y/hassio-addons/addon-homebridge.svg
@@ -389,10 +399,14 @@ SOFTWARE.
 [forum-shield]: https://img.shields.io/badge/community-forum-brightgreen.svg
 [forum]: https://community.home-assistant.io/t/community-hass-io-add-on-homebridge/33803?u=frenck
 [frenck]: https://github.com/frenck
+[gitlabci-shield]: https://gitlab.com/hassio-addons/addon-homebridge/badges/master/pipeline.svg
+[gitlabci]: https://gitlab.com/hassio-addons/addon-homebridge/pipelines
 [home-assistant]: https://home-assistant.io
 [homebridge-homeassistant]: https://github.com/home-assistant/homebridge-homeassistant
 [homebridge-plugins]: https://www.npmjs.com/search?q=homebridge-plugin
 [homebridge]: https://github.com/nfarina/homebridge
+[i386-anchore-shield]: https://anchore.io/service/badges/image/4f3282de1b844e95b246ad7271392feee3bff81abbdbdedc8357f306b705ae75
+[i386-anchore]: https://anchore.io/image/dockerhub/hassioaddons%2Fhomebridge-i386%3Alatest
 [i386-arch-shield]: https://img.shields.io/badge/architecture-i386-blue.svg
 [i386-dockerhub]: https://hub.docker.com/r/hassioaddons/homebridge-i386
 [i386-layers-shield]: https://images.microbadger.com/badges/image/hassioaddons/homebridge-i386.svg
@@ -408,10 +422,6 @@ SOFTWARE.
 [olivierguerriat]: https://github.com/olivierguerriat
 [oznu-docker-homebridge]: https://github.com/oznu/docker-homebridge
 [oznu]: https://github.com/oznu
-[patreon-shield]: https://img.shields.io/badge/donate-patreon-blue.svg
-[patreon]: https://www.patreon.com/frenck
-[paypal-shield]: https://img.shields.io/badge/donate-paypal-blue.svg
-[paypal]: https://www.paypal.me/FranckNijhof
 [project-stage-shield]: https://img.shields.io/badge/project%20stage-production%20ready-brightgreen.svg
 [reddit]: https://reddit.com/r/homeassistant
 [releases-shield]: https://img.shields.io/github/release/hassio-addons/addon-homebridge.svg
