@@ -150,6 +150,12 @@ In some situations, IPv6 might cause more problems then it solves.
 Setting this option to `false`, partially disables IPv6 support causing
 Ahahi and Homebridge to only listen for connections on IPv4
 
+### Option: `insecure`
+
+Allow unauthenticated requests to Homebridge (for easier hacking). Some
+plugins require this as well. Be aware of the possible security implication
+this has.
+
 ### Option: `packages`
 
 Allows you to specify additional [Alpine packages][alpine-packages] to be
