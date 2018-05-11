@@ -230,7 +230,7 @@ can change it as well).
 - Errors on startup. The following errors are experienced when starting
   Homebridge and can be safely ignored.
 
-```
+```txt
 *** WARNING *** The program 'nodejs' uses the Apple Bonjour compatibility layer
 of Avahi
 *** WARNING *** Please fix your application to use the native API of Avahi!
@@ -369,6 +369,7 @@ SOFTWARE.
 [aarch64-microbadger]: https://microbadger.com/images/hassioaddons/homebridge-aarch64
 [aarch64-pulls-shield]: https://img.shields.io/docker/pulls/hassioaddons/homebridge-aarch64.svg
 [aarch64-version-shield]: https://images.microbadger.com/badges/version/hassioaddons/homebridge-aarch64.svg
+[alpine-packages]: https://pkgs.alpinelinux.org/
 [amd64-anchore-shield]: https://anchore.io/service/badges/image/2b9a78e147678b80fc0e8c63537c669b803f605555d055fba8fe5bd01a5ea60c
 [amd64-anchore]: https://anchore.io/image/dockerhub/hassioaddons%2Fhomebridge-amd64%3Alatest
 [amd64-arch-shield]: https://img.shields.io/badge/architecture-amd64-blue.svg
