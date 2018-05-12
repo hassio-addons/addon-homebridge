@@ -6,6 +6,8 @@
 # shellcheck disable=SC1091
 source /usr/lib/hassio-addons/base.sh
 
+declare -a homebridge_options
+
 # Wait for Avahi to become available
 s6-svwait -u -t 5000 /var/run/s6/services/avahi
 
@@ -13,8 +15,14 @@ s6-svwait -u -t 5000 /var/run/s6/services/avahi
 # Avahi might need some time.
 sleep 5
 
-if hass.debug; then
-  exec homebridge -D -U /config/homebridge/
-else
-  exec homebridge -U /config/homebridge/
+homebridge_options+=(-U "/config/homebridge")
+
+if hass.config.true 'insecure'; then
+  homebridge_options+=(--insecure)
 fi
+
+if hass.debug; then
+  homebridge_options+=(--debug)
+fi
+
+exec homebridge "${homebridge_options[@]}"
