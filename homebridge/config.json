@@ -26,6 +26,7 @@
     "avahi_hostname": "",
     "avahi_domainname": "local",
     "enable_ipv6": true,
+    "insecure": false,
     "packages": [],
     "init_commands": [],
     "plugins": []
@@ -36,6 +37,7 @@
     "avahi_hostname": "str",
     "avahi_domainname": "str",
     "enable_ipv6": "bool",
+    "insecure": "bool",
     "packages": ["str"],
     "init_commands": ["str"],
     "plugins": ["str"]
