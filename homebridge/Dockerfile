@@ -6,7 +6,7 @@ FROM ${BUILD_FROM}
 RUN \
     apk add --no-cache --virtual .build-dependencies \
         avahi-dev=0.7-r1 \
-        g++=6.4.0-r5 \
+        g++=6.4.0-r8 \
         libffi-dev=3.2.1-r4 \
         make=4.2.1-r0 \
         openssl-dev=1.0.2o-r0 \
