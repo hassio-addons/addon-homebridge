@@ -10,7 +10,7 @@ RUN \
         libffi-dev=3.2.1-r4 \
         make=4.2.1-r2 \
         openssl-dev=1.0.2o-r1 \
-        python2=2.7.14-r2 \
+        python2=2.7.15-r0 \
     \
     && apk add --no-cache \
         avahi=0.7-r1 \
