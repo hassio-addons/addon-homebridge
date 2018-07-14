@@ -15,7 +15,7 @@ RUN \
     && apk add --no-cache \
         avahi=0.7-r1 \
         avahi-compat-libdns_sd=0.7-r1 \
-        dbus=1.10.24-r0 \
+        dbus=1.10.24-r1 \
         git=2.15.2-r0 \
         nodejs=8.9.3-r1 \
         nodejs-npm=8.9.3-r1 \
