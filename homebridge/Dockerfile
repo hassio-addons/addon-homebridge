@@ -8,7 +8,7 @@ RUN \
         avahi-dev=0.7-r1 \
         g++=6.4.0-r8 \
         libffi-dev=3.2.1-r4 \
-        make=4.2.1-r0 \
+        make=4.2.1-r2 \
         openssl-dev=1.0.2o-r0 \
         python2=2.7.14-r2 \
     \
