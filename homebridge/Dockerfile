@@ -26,7 +26,7 @@ RUN \
     && npm set unsafe-perm true \
     \
     && npm -g install \
-        node-gyp@3.7.0 \
+        node-gyp@3.8.0 \
         homebridge@0.4.44 \
         homebridge-homeassistant@3.1.0 \
     \
